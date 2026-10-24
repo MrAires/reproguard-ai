@@ -222,3 +222,4 @@ For a non-command-line workflow on Windows:
 The desktop shortcut targets the project's own virtual environment, so moving the project folder after setup can break the shortcut. If you move it, run `setup_windows.bat` again to recreate the shortcut.
 
 Launcher diagnostics are written to `logs/reproguard_launcher.log`.
+"# reproguard-ai" 
