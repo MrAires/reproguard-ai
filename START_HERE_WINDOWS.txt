@@ -1,0 +1,32 @@
+REPROGUARD AI - WINDOWS QUICK START
+===================================
+
+1. Keep this folder in a permanent location, for example:
+   C:\ReproGuardAI
+
+2. Make sure Python 3.10 or newer is installed.
+   During Python installation, enable "Add Python to PATH".
+
+3. Double-click:
+   setup_windows.bat
+
+4. Wait until you see "Setup complete".
+   A "ReproGuard AI" shortcut will be created on your Desktop.
+
+5. Double-click the Desktop shortcut.
+   ReproGuard will open in your browser at:
+   http://127.0.0.1:8501
+
+6. In the GUI:
+   - click "Run bundled demo paper" first, or
+   - upload your own research-paper PDF.
+
+7. To stop the local server, double-click:
+   stop_reproguard.bat
+
+IMPORTANT
+---------
+- The RCI is a reproducibility-documentation completeness measure.
+- It is NOT a score of scientific truth, novelty, or research quality.
+- When Online verification is enabled, detected DOI and GitHub identifiers are queried against public APIs.
+- Launcher logs are stored in logs\reproguard_launcher.log.

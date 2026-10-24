@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reproguard-ai"
+version = "0.2.0"
+description = "Evidence-first citation integrity and reproducibility auditing for research papers."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "ReproGuard AI Contributors"}]
+dependencies = [
+  "PyMuPDF>=1.24,<2",
+  "requests>=2.31,<3",
+  "pydantic>=2.7,<3",
+  "streamlit>=1.40,<2",
+  "pandas>=2.0,<3",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "ruff>=0.6,<1"]
+
+[project.scripts]
+reproguard = "reproguard.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"

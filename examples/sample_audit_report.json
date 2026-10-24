@@ -1,0 +1,363 @@
+{
+  "schema_version": "1.0",
+  "reproguard_version": "0.1.0",
+  "file_name": "sample_research_paper.pdf",
+  "extracted_title": "Reproducible Benchmarking of Tree Ensembles on Tabular Data",
+  "page_count": 2,
+  "character_count": 1782,
+  "doi_count": 2,
+  "github_url_count": 1,
+  "citations": [
+    {
+      "doi": "10.1023/a:1010933404324",
+      "status": "unverified",
+      "crossref_title": null,
+      "openalex_title": null,
+      "publisher": null,
+      "year": null,
+      "type": null,
+      "metadata_similarity": null,
+      "issues": [],
+      "sources_checked": []
+    },
+    {
+      "doi": "10.1145/2939672.2939785",
+      "status": "unverified",
+      "crossref_title": null,
+      "openalex_title": null,
+      "publisher": null,
+      "year": null,
+      "type": null,
+      "metadata_similarity": null,
+      "issues": [],
+      "sources_checked": []
+    }
+  ],
+  "repositories": [
+    {
+      "url": "https://github.com/scikit-learn/scikit-learn",
+      "owner": "scikit-learn",
+      "repo": "scikit-learn",
+      "exists": false,
+      "archived": null,
+      "default_branch": null,
+      "stars": null,
+      "forks": null,
+      "license_name": null,
+      "last_pushed_at": null,
+      "signals": [],
+      "issues": []
+    }
+  ],
+  "reproducibility_items": [
+    {
+      "key": "problem",
+      "label": "Research objective",
+      "description": "A concrete task, objective, hypothesis, or research question is described.",
+      "applicable": true,
+      "detected": true,
+      "evidence": "ular classification. We use a public benchmark dataset and compare a Random Forest baseline with Gradient Boosting. The objective is to document enough experimental detail for an independent researcher to repeat the analysis. 1. Dataset and preproce"
+    },
+    {
+      "key": "dataset",
+      "label": "Dataset / data source",
+      "description": "The dataset or data source is identified or described.",
+      "applicable": true,
+      "detected": true,
+      "evidence": "Abstract This study evaluates reproducible benchmarking practices for tabular classification. We use a public benchmark dataset and compare a Random Forest baseline with Gradient Boosting. The objective is to document enough experimental detail fo"
+    },
+    {
+      "key": "split",
+      "label": "Train/validation/test split",
+      "description": "Data partitioning or cross-validation is documented.",
+      "applicable": true,
+      "detected": true,
+      "evidence": "beled samples and 20 features. Missing values are imputed using the median. Numeric features are standardized after the train/test split. We use a stratified 80/20 training/test split and five-fold cross-validation on the training set. 2. Models and"
+    },
+    {
+      "key": "preprocessing",
+      "label": "Preprocessing",
+      "description": "Data cleaning, normalization, tokenization, augmentation, or feature preprocessing is documented.",
+      "applicable": true,
+      "detected": true,
+      "evidence": "bjective is to document enough experimental detail for an independent researcher to repeat the analysis. 1. Dataset and preprocessing The dataset contains 1,000 labeled samples and 20 features. Missing values are imputed using the median. Numeric fea"
+    },
+    {
+      "key": "model",
+      "label": "Model / architecture",
+      "description": "The model, algorithm, or architecture is identified.",
+      "applicable": true,
+      "detected": true,
+      "evidence": "aluates reproducible benchmarking practices for tabular classification. We use a public benchmark dataset and compare a Random Forest baseline with Gradient Boosting. The objective is to document enough experimental detail for an independent researcher"
+    },
+    {
+      "key": "hyperparameters",
+      "label": "Hyperparameters",
+      "description": "Hyperparameters or training configuration are reported.",
+      "applicable": true,
+      "detected": true,
+      "evidence": "split. We use a stratified 80/20 training/test split and five-fold cross-validation on the training set. 2. Models and hyperparameters The Random Forest uses n_estimators=200, max_depth=12, and random_state=42. The Gradient Boosting model uses 150 estim"
+    },
+    {
+      "key": "seed",
+      "label": "Random seed",
+      "description": "Randomness control or deterministic seed is reported.",
+      "applicable": true,
+      "detected": true,
+      "evidence": "th=12, and random_state=42. The Gradient Boosting model uses 150 estimators and learning rate=0.05. All experiments use random seed 42. 3. Evaluation We report accuracy, precision, recall, F1-score, and ROC-AUC. Results are compared with the Random Fo"
+    },
+    {
+      "key": "metrics",
+      "label": "Evaluation metrics",
+      "description": "Quantitative evaluation metrics are identified.",
+      "applicable": true,
+      "detected": true,
+      "evidence": "Boosting model uses 150 estimators and learning rate=0.05. All experiments use random seed 42. 3. Evaluation We report accuracy, precision, recall, F1-score, and ROC-AUC. Results are compared with the Random Forest baseline. Each configuration is"
+    },
+    {
+      "key": "baselines",
+      "label": "Baseline comparison",
+      "description": "A baseline, comparator, ablation, or prior method comparison is described.",
+      "applicable": true,
+      "detected": true,
+      "evidence": "ucible benchmarking practices for tabular classification. We use a public benchmark dataset and compare a Random Forest baseline with Gradient Boosting. The objective is to document enough experimental detail for an independent researcher to repeat"
+    },
+    {
+      "key": "code",
+      "label": "Code availability",
+      "description": "Source code, implementation repository, or code availability is mentioned.",
+      "applicable": true,
+      "detected": true,
+      "evidence": "n with 16 GB RAM. The reference implementation uses scikit-learn. A public software repository is referenced at https://github.com/scikit-learn/scikit-learn . 5. Limitations This demonstration is intentionally small and is not intended to establish a"
+    },
+    {
+      "key": "hardware",
+      "label": "Hardware / environment",
+      "description": "Compute hardware or software environment is described.",
+      "applicable": true,
+      "detected": true,
+      "evidence": "e report mean and standard deviation. 4. Environment and code availability Experiments were run with Python 3.12 on a CPU workstation with 16 GB RAM. The reference implementation uses scikit-learn. A public software repository is referenced"
+    },
+    {
+      "key": "statistics",
+      "label": "Statistical uncertainty / significance",
+      "description": "Confidence intervals, significance tests, standard deviation, or repeated runs are reported.",
+      "applicable": true,
+      "detected": true,
+      "evidence": "compared with the Random Forest baseline. Each configuration is evaluated in five repeated runs and we report mean and standard deviation. 4. Environment and code availability Experiments were run with Python 3.12 on a CPU workstation with 16 GB RAM. The"
+    }
+  ],
+  "rci_score": 100.0,
+  "warnings": [
+    "Automated findings require human review; absence of a detected signal does not prove the information is absent from figures, supplements, external repositories, or non-standard wording."
+  ],
+  "strengths": [
+    "The paper documents most baseline reproducibility signals checked by ReproGuard v0.1."
+  ],
+  "evidence_nodes": [
+    {
+      "id": "paper",
+      "label": "Reproducible Benchmarking of Tree Ensembles on Tabular Data",
+      "kind": "paper"
+    },
+    {
+      "id": "doi_0",
+      "label": "10.1023/a:1010933404324",
+      "kind": "citation"
+    },
+    {
+      "id": "doi_1",
+      "label": "10.1145/2939672.2939785",
+      "kind": "citation"
+    },
+    {
+      "id": "repo_0",
+      "label": "scikit-learn/scikit-learn",
+      "kind": "repository"
+    },
+    {
+      "id": "signal_problem",
+      "label": "Research objective",
+      "kind": "reproducibility"
+    },
+    {
+      "id": "signal_dataset",
+      "label": "Dataset / data source",
+      "kind": "reproducibility"
+    },
+    {
+      "id": "signal_split",
+      "label": "Train/validation/test split",
+      "kind": "reproducibility"
+    },
+    {
+      "id": "signal_preprocessing",
+      "label": "Preprocessing",
+      "kind": "reproducibility"
+    },
+    {
+      "id": "signal_model",
+      "label": "Model / architecture",
+      "kind": "reproducibility"
+    },
+    {
+      "id": "signal_hyperparameters",
+      "label": "Hyperparameters",
+      "kind": "reproducibility"
+    },
+    {
+      "id": "signal_seed",
+      "label": "Random seed",
+      "kind": "reproducibility"
+    },
+    {
+      "id": "signal_metrics",
+      "label": "Evaluation metrics",
+      "kind": "reproducibility"
+    },
+    {
+      "id": "signal_baselines",
+      "label": "Baseline comparison",
+      "kind": "reproducibility"
+    },
+    {
+      "id": "signal_code",
+      "label": "Code availability",
+      "kind": "reproducibility"
+    },
+    {
+      "id": "signal_hardware",
+      "label": "Hardware / environment",
+      "kind": "reproducibility"
+    },
+    {
+      "id": "signal_statistics",
+      "label": "Statistical uncertainty / significance",
+      "kind": "reproducibility"
+    }
+  ],
+  "evidence_edges": [
+    {
+      "source": "paper",
+      "target": "doi_0",
+      "label": "unverified"
+    },
+    {
+      "source": "paper",
+      "target": "doi_1",
+      "label": "unverified"
+    },
+    {
+      "source": "paper",
+      "target": "repo_0",
+      "label": "references code"
+    },
+    {
+      "source": "paper",
+      "target": "signal_problem",
+      "label": "documents"
+    },
+    {
+      "source": "paper",
+      "target": "signal_dataset",
+      "label": "documents"
+    },
+    {
+      "source": "paper",
+      "target": "signal_split",
+      "label": "documents"
+    },
+    {
+      "source": "paper",
+      "target": "signal_preprocessing",
+      "label": "documents"
+    },
+    {
+      "source": "paper",
+      "target": "signal_model",
+      "label": "documents"
+    },
+    {
+      "source": "paper",
+      "target": "signal_hyperparameters",
+      "label": "documents"
+    },
+    {
+      "source": "paper",
+      "target": "signal_seed",
+      "label": "documents"
+    },
+    {
+      "source": "paper",
+      "target": "signal_metrics",
+      "label": "documents"
+    },
+    {
+      "source": "paper",
+      "target": "signal_baselines",
+      "label": "documents"
+    },
+    {
+      "source": "paper",
+      "target": "signal_code",
+      "label": "documents"
+    },
+    {
+      "source": "paper",
+      "target": "signal_hardware",
+      "label": "documents"
+    },
+    {
+      "source": "paper",
+      "target": "signal_statistics",
+      "label": "documents"
+    }
+  ],
+  "trace": [
+    {
+      "stage": "PLAN",
+      "agent": "Orchestrator",
+      "message": "Parse document, verify scholarly identifiers, inspect repositories, assess reproducibility evidence, then critique the result."
+    },
+    {
+      "stage": "ACT",
+      "agent": "ParserAgent",
+      "message": "Extracting PDF text, title, DOI identifiers, GitHub URLs, and references section."
+    },
+    {
+      "stage": "OBSERVE",
+      "agent": "ParserAgent",
+      "message": "Extracted 2 pages, 2 unique DOI(s), and 1 GitHub URL(s)."
+    },
+    {
+      "stage": "OBSERVE",
+      "agent": "CitationAgent",
+      "message": "Online verification disabled; DOI identifiers are extracted but not resolved."
+    },
+    {
+      "stage": "OBSERVE",
+      "agent": "RepositoryAgent",
+      "message": "Online repository audit disabled; repository URLs were extracted only."
+    },
+    {
+      "stage": "ACT",
+      "agent": "MethodologyAgent",
+      "message": "Scanning the paper for explicit reproducibility evidence using transparent rule-based detectors."
+    },
+    {
+      "stage": "EVALUATE",
+      "agent": "MethodologyAgent",
+      "message": "Reproducibility Completeness Index (RCI): 100.0/100 based on documented evidence items."
+    },
+    {
+      "stage": "EVALUATE",
+      "agent": "CriticAgent",
+      "message": "Generated 1 caution(s) and 1 documented strength(s)."
+    }
+  ],
+  "metadata": {
+    "generated_at_utc": "2026-09-27T02:41:14.052850+00:00",
+    "online_verification": false,
+    "rci_definition": "Percentage of applicable reproducibility documentation signals detected. It is not a truth, quality, novelty, or trustworthiness score."
+  }
+}

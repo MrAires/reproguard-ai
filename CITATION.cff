@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: "ReproGuard AI"
+message: "If you use ReproGuard AI in research, please cite the software release."
+type: software
+authors:
+  - name: "ReproGuard AI Contributors"
+version: 0.1.0
+date-released: 2026-09-27
+license: MIT

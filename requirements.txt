@@ -1,0 +1,5 @@
+PyMuPDF>=1.24,<2
+requests>=2.31,<3
+pydantic>=2.7,<3
+streamlit>=1.40,<2
+pandas>=2.0,<3

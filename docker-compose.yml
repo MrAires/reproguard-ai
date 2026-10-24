@@ -1,0 +1,8 @@
+services:
+  reproguard:
+    build: .
+    ports:
+      - "8501:8501"
+    environment:
+      - REPROGUARD_CONTACT_EMAIL=${REPROGUARD_CONTACT_EMAIL:-}
+      - GITHUB_TOKEN=${GITHUB_TOKEN:-}
